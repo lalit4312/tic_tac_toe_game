@@ -1,0 +1,36 @@
+{
+    "short_name": "TicTacToe",
+    "name": "Tic Tac Toe Multiplayer",
+    "description": "A modern and fun Tic Tac Toe game for multiplayer.",
+    "icons": [
+        {
+            "src": "image2.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "image.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "1280_1.png",
+            "type": "image/png",
+            "sizes": "1280x720",
+            "form_factor": "wide"
+        },
+        {
+            "src": "750_1.png",
+            "type": "image/png",
+            "sizes": "750x1334",
+            "form_factor": "narrow"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#1e3c72",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#2a5298"
+}
