@@ -784,6 +784,31 @@
                 });
         }
     </script>
+    <script>
+        // Trigger the PWA install prompt
+        window.addEventListener('beforeinstallprompt', (event) => {
+            event.preventDefault(); // Prevent the default prompt
+            const installButton = document.createElement('button');
+            installButton.textContent = 'Install Tic Tac Toe';
+            installButton.style.position = 'fixed';
+            installButton.style.bottom = '20px';
+            installButton.style.right = '20px';
+            installButton.style.padding = '10px 20px';
+            installButton.style.backgroundColor = '#4d41ff';
+            installButton.style.color = '#fff';
+            installButton.style.border = 'none';
+            installButton.style.borderRadius = '5px';
+            installButton.style.cursor = 'pointer';
+            installButton.style.zIndex = '1000';
+
+            installButton.addEventListener('click', () => {
+                event.prompt(); // Show the install prompt
+                installButton.remove(); // Remove the button after clicking
+            });
+
+            document.body.appendChild(installButton);
+        });
+    </script>
 </body>
 
 </html>
